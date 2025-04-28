@@ -16,7 +16,7 @@ jobs:
         uses: repo-sync/github-sync@v2 # 使用这个预构建的 Action
         with:
           # **必需：** 将此 URL 替换为你要同步的 *上游* (原始) 仓库的 URL
-          source_repo: "https://github.com/OriginalOwner/original-repo.git"
+          source_repo: "https://github.com/lobehub/lobe-chat.git"
 
           # **必需：** 上游仓库中你想要同步的源分支名称 (通常是 main 或 master)
           source_branch: "main"
