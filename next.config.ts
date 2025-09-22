@@ -244,11 +244,11 @@ const nextConfig: NextConfig = {
       permanent: true,
       source: '/discover/providers',
     },
-    {
-      destination: '/settings/common',
-      permanent: true,
-      source: '/settings',
-    },
+    // {
+    //   destination: '/settings/common',
+    //   permanent: true,
+    //   source: '/settings',
+    // },
     {
       destination: '/chat',
       permanent: true,
@@ -271,6 +271,7 @@ const nextConfig: NextConfig = {
   // when external packages in dev mode with turbopack, this config will lead to bundle error
   serverExternalPackages: isProd ? ['@electric-sql/pglite'] : undefined,
   transpilePackages: ['pdfjs-dist', 'mermaid'],
+
   typescript: {
     ignoreBuildErrors: true,
   },
